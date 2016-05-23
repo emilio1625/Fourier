@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.22)  22 MAY 2016 22:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.22)  23 MAY 2016 01:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -864,22 +864,130 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 88.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [4]
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 10000) in paragraph at lines 112--116
 
  []
 
-[5] (./SerieFourier.aux
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+
+<images/Circuito_rectificador_onda_completa.png, id=29, 215.80624pt x 136.51pt>
+File: images/Circuito_rectificador_onda_completa.png Graphic file (type png)
+<use images/Circuito_rectificador_onda_completa.png>
+Package pdftex.def Info: images/Circuito_rectificador_onda_completa.png used on
+ input line 138.
+(pdftex.def)             Requested size: 215.80571pt x 136.50966pt.
+
+<images/Circuito_rectificador_onda_completa_ON.png, id=31, 215.80624pt x 136.51
+pt>
+File: images/Circuito_rectificador_onda_completa_ON.png Graphic file (type png)
+
+ <use images/Circuito_rectificador_onda_completa_ON.png>
+Package pdftex.def Info: images/Circuito_rectificador_onda_completa_ON.png used
+ on input line 146.
+(pdftex.def)             Requested size: 215.80571pt x 136.50966pt.
+
+<images/Circuito_rectificador_onda_completa_OFF.png, id=32, 215.80624pt x 136.5
+1pt>
+File: images/Circuito_rectificador_onda_completa_OFF.png Graphic file (type png
+)
+ <use images/Circuito_rectificador_onda_completa_OFF.png>
+Package pdftex.def Info: images/Circuito_rectificador_onda_completa_OFF.png use
+d on input line 154.
+(pdftex.def)             Requested size: 215.80571pt x 136.50966pt.
+
+<images/Puente_de_diodos.png, id=33, 238.8925pt x 199.74625pt>
+File: images/Puente_de_diodos.png Graphic file (type png)
+
+<use images/Puente_de_diodos.png>
+Package pdftex.def Info: images/Puente_de_diodos.png used on input line 162.
+(pdftex.def)             Requested size: 238.8919pt x 199.74576pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+[6] [7 <./images/Circuito_rectificador_onda_completa.png> <./images/Circuito_re
+ctificador_onda_completa_ON.png> <./images/Circuito_rectificador_onda_completa_
+OFF.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
+ []
+
+
+<images/Circuito_Inductivo_Onda_Completa.png, id=44, 366.36874pt x 150.5625pt>
+File: images/Circuito_Inductivo_Onda_Completa.png Graphic file (type png)
+
+<use images/Circuito_Inductivo_Onda_Completa.png>
+Package pdftex.def Info: images/Circuito_Inductivo_Onda_Completa.png used on in
+put line 183.
+(pdftex.def)             Requested size: 366.36784pt x 150.56212pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
+
+ []
+
+[8 <./images/Puente_de_diodos.png>]
+<images/Circuito_Inductivo_Lineal_Onda_Completa.png, id=49, 181.67876pt x 100.3
+75pt>
+File: images/Circuito_Inductivo_Lineal_Onda_Completa.png Graphic file (type png
+)
+ <use images/Circuito_Inductivo_Lineal_Onda_Completa.png>
+Package pdftex.def Info: images/Circuito_Inductivo_Lineal_Onda_Completa.png use
+d on input line 199.
+(pdftex.def)             Requested size: 181.6783pt x 100.37474pt.
+ [9 <./images/Circuito_Inductivo_Onda_Completa.png (PNG copy)> <./images/Circui
+to_Inductivo_Lineal_Onda_Completa.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 213--216
+[]\T1/lmr/m/n/12 -. (-). Rec-ti-fi-ca-dor. 23/05/2016, de Wi-ki-pe-dia Si-tio w
+eb:
+ []
+
+[10] (./SerieFourier.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 7779 strings out of 494966
- 108231 string characters out of 6179559
- 179833 words of memory out of 5000000
- 10842 multiletter control sequences out of 15000+600000
+ 7824 strings out of 494966
+ 109775 string characters out of 6179559
+ 180885 words of memory out of 5000000
+ 10879 multiletter control sequences out of 15000+600000
  55314 words of font info for 58 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 38i,12n,43p,494b,308s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,43p,730b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/e
 nc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/
 share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/
@@ -890,10 +998,10 @@ fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10
 usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on SerieFourier.pdf (5 pages, 147532 bytes).
+Output written on SerieFourier.pdf (10 pages, 181122 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 94 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

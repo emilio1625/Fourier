@@ -4,7 +4,9 @@
 \contentsline {subsection}{\numberline {1.2}El rectificador de onda completa}{3}
 \contentsline {section}{\numberline {2}Objetivos}{4}
 \contentsline {section}{\numberline {3}Desarrollo}{4}
-\contentsline {section}{\numberline {4}Resultados}{5}
-\contentsline {section}{\numberline {5}Conclusiones}{5}
-\contentsline {section}{\numberline {6}Bibliografia}{5}
-\contentsline {section}{\numberline {7}Referencias}{5}
+\contentsline {subsection}{\numberline {3.1}Rectificador}{5}
+\contentsline {subsubsection}{\numberline {3.1.1}Rectificador de onda completa}{6}
+\contentsline {subsubsection}{\numberline {3.1.2}Rectificador de onda completa de filtro inductivo}{8}
+\contentsline {section}{\numberline {4}Resultados}{10}
+\contentsline {section}{\numberline {5}Conclusiones}{10}
+\contentsline {section}{\numberline {6}Referencias}{10}

@@ -18,8 +18,8 @@
 \usepackage{fancyhdr}
 \title{Modelado de un rectificador de onda usando la serie de Fourier}
 \author{
-  Cabrera López Oscar Emilio\\
-  Águilar Enríquez Claudio Deadpulk
+  Aguilar Enriquez Paul Sebastian\\
+  Cabrera López Oscar Emilio
 }
 
 \pagestyle{fancy}
@@ -108,12 +108,111 @@ del flujo del calor
 presentado a la Académie des Sciences en 1811 y publicado en parte como la célebre \textit{Théorie analytique de la chaleur} en 1822. Fourier hizo un intento serio por demostrar que cualquier función diferenciable puede ser expandida
 en una serie trigonométrica.
 
+\subsection{Rectificador}
+\indent Dada la necesidad de convertir la corriente alterna en continua, lo cual se logra por medio de la rectificación.\\
+\indent Un rectificador es el elemento o circuito que permite convertir la corriente alterna en corriente continua. Esto se realiza ya sea utilizando diodos rectificadores, semiconductores de estado sólido, válvulas al vacío o válvulas gaseosas como las de vapor de mercurio, asi como con circuitos RC o LC que funcionan como circuitos filtradores de señales.\\
+\indent Dependiendo de las características de la alimentación en corriente alterna que emplean, se les clasifica en monofásicos, cuando están alimentados por una fase de la red eléctrica, o trifásicos cuando se alimentan por tres fases.\\
+\indent Atendiendo al tipo de rectificación, pueden ser de media onda, cuando sólo se utiliza uno de los semiciclos de la corriente, o de onda completa, donde ambos semiciclos son aprovechados.\\
+
+\indent Existen una gran variedad de rectificadores, entre los mas comunes se encuentran los siguientes:
+\begin{enumerate}
+    \item Rectificador de Media Onda
+    \item Rectificador de Onda Completa con Tap Central
+    \item Rectificador de Onda Completa con Puente de Diodos
+    \item Rectificador de Onda (Media o Completa) con filtros RC o LC
+\end{enumerate}
+
+\subsubsection{Rectificador de onda completa}
+\indent Un rectificador de onda completa es un circuito empleado para convertir una señal de corriente alterna de entrada (Vi) en corriente continua de salida (Vo) pulsante. En este caso, la parte negativa de la señal se convierte en positiva o bien la parte positiva de la señal se convertirá en negativa, según se necesite una señal positiva o negativa de corriente continua.\\
+
+\textbf{Rectificador con Tap Central (Dos diodos)}
+
+\indent En el circuito de la figura, ambos diodos no pueden encontrarse simultáneamente en directa o en inversa, ya que las diferencias de potencial a las que están sometidos son de signo contrario; por tanto uno se encontrará polarizado inversamente y el otro directamente. La tensión de entrada (Vi) es, en este caso, la media de la tensión del secundario del transformador. Figura \ref{Figura1}\\
+
+\textbf{Tensión de entrada positiva} \indent El diodo 1 se encuentra en polarización directa(conduce), mientras que el 2 se encuentra en inversa (no conduce). La tensión de salida es igual a la de entrada.Nota:los diodos en posición directa conducen altas corrientes,en posición inversa alta tensiones. Figura \ref{Figura2}\\
+
+\textbf{Tensión de entrada negativa} \indent El diodo 2 se encuentra en polarización directa (conduce), mientras que el diodo 1 se encuentra en polarización inversa (no conduce). La tensión de salida es igual a la de entrada pero de signo contrario. El diodo 1 ha de soportar en inversa la tensión máxima del secundario. Figura \ref{Figura3}\\
+
+\begin{figure}
+  \begin{center}
+    \includegraphics{images/Circuito_rectificador_onda_completa.png}
+    \caption{Circuito rectificador de onda completa}
+    \label{Figura1}
+  \end{center}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics{images/Circuito_rectificador_onda_completa_ON.png}
+    \caption{Circuito rectificador de onda completa ON}
+    \label{Figura2}
+  \end{center}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics{images/Circuito_rectificador_onda_completa_OFF.png}
+    \caption{Circuito rectificador de onda completa OFF}
+    \label{Figura3}
+  \end{center}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics{images/Puente_de_diodos.png}
+    \caption{Circuito rectificador de onda completa con puente de diodos}
+    \label{Figura4}
+  \end{center}
+\end{figure}
+
+.\\
+
+\textbf{Rectificador con Puente de Graetz (Puente de diodos)}
+
+\indent En este caso se emplean cuatro diodos con la disposición de la figura \ref{Figura4}. Al igual que antes, sólo son posibles dos estados de conducción, o bien los diodos 1 y 3 están en directa y conducen (tensión positiva) o por el contrario son los diodos 2 y 4 los que se encuentran en directa y conducen (tensión negativa).\\
+
+\indent A diferencia del caso anterior, ahora la tensión máxima de salida es la del secundario del transformador (el doble de la del caso anterior), la misma que han de soportar los diodos en inversa, al igual que en el rectificador con dos diodos. Esta es la configuración usualmente empleada para la obtención de onda continua.\\
+
+\subsubsection{Rectificador de onda completa de filtro inductivo}
+
+\indent Los rectificadores ideales (que utilizan diodos, como los mostrados anteriormente) producen formas de onda unidireccionales pero de ninguna manera constantes, como sería deseable para su uso como fuente de alimentación. Dado que el problema es equivalente al de eliminar las componentes frecuenciales diferentes de la continua, la solución consiste en utilizar un filtro pasabajos cuya frecuencia de corte esté suficientemente por debajo de la
+frecuencia de la onda rectificada.\\
+
+\begin{figure}
+  \begin{center}
+    \includegraphics{images/Circuito_Inductivo_Onda_Completa.png}
+    \caption{Circuito rectificador inductivo de onda completa}
+    \label{Figura5}
+  \end{center}
+\end{figure}
+
+\indent En la figura \ref{Figura5} podemos observar el circuito de la versión inductiva del rectificador de onda
+completa.\\
+
+\indent En este circuito la corriente por el inductor no se interrumpe nunca. En efecto, la tensión en el inductor seguiría la misma evolución de la tensión de entrada, internándose en la región negativa. Esto es posible porque por la naturaleza reactiva del inductor, puede tener tensión negativa y corriente positiva. Si ahora permitimos la aparición del segundo semiciclo rectificado, el diodo D2 se encontrará con una tensión que tiende a ser positiva en su ánodo (la de entrada rectificada) y negativa en su cátodo (la del inductor), por lo tanto estará en condiciones de conducir, inyectando en el inductor una corriente apropiada para mantener las condiciones de continuidad. En ese
+momento, el diodo D 1 dejará de conducir, pues su polarización se volverá inversa, desvinculándose del inductor.\\
+
+\indent En resumen, el inductor estará expuesto, ya sea por uno u otro diodo, a una fuente de tensión ideal correspondiente a una senoide rectificada. El análisis puede proceder ahora de acuerdo con la teoría de circuitos lineales, según el modelo indicado en la figura \ref{Figura6} .
+
+\begin{figure}
+  \begin{center}
+    \includegraphics{images/Circuito_Inductivo_Lineal_Onda_Completa.png}
+    \caption{Circuito rectificador inductivo de onda completa}
+    \label{Figura6}
+  \end{center}
+\end{figure}
+
 \section{Resultados}
 
 \section{Conclusiones}
 
-\section{Bibliografia}
-
 \section{Referencias}
+
+\begin{thebibliography}{9}
+\bibitem{Ref1}Federico Miyara. (2002). RECTIFICACIÓN. 23/05/2016, de Universidad Nacional de Rosario Sitio web: http://www.fceia.unr.edu.ar/enica3/rectif.pdf
+\bibitem{Ref2}-. (-). Rectificador. 23/05/2016, de Wikipedia Sitio web: https://es.wikipedia.org/wiki/Rectificador
+%\bibitem{Ref3}-. (-). Circuitos Rectificadores. 23/05/2016, de Universidad Nacional Abierta y a Distancia Sitio web: http://datateca.unad.edu.co/contenidos/243006/Contenidos/Circuitos_con_diodos/circuitos_rectificadores.html
+%\bibitem{Ref4}-. (-). Rectificador de onda completa. 23/05/2016, de Wikipedia Sitio web: https://es.wikipedia.org/wiki/Rectificador_de_onda_completa
+\end{thebibliography}
 
 \end{document}

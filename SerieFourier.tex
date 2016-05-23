@@ -86,24 +86,27 @@ frecuencia de la onda rectificada, dicho filtro puede implementarse mediante cap
 La idea básica de las series de Fourier es que toda función periódica de período $T$ puede ser expresada como una suma trigonométrica de senos y cosenos del mismo período $T$.\\
 \indent A mediados del siglo XVIII, es decir, unos cincuenta años antes de los trabajos de Fourier, ya se había planteado el problema de la representación de una función por medio de una serie trigonométrica.\\
 \indent En 1747 mientras estudiaba el movimiento en las cuerdas de violín d´Alembert muestra que la solución general de la ecuación de ondas
-\[ \frac{\partial ^2u}{\partial t^2}-\alpha\frac{\partial^2t}{\partial x^2} = 0 \]
+\[ \frac{\partial ^2u}{\partial t^2}-\alpha\frac{\partial^2u}{\partial x^2} = 0 \]
 se escribe de la forma
 \[ u(x,t) = \varphi(x + \alpha t) + \psi(x - \alpha t)  \]
 A continuación impone la condición de que los extremos de la cuerda en $x = 0$ y $x = l$ estén fijos y deduce que
 \[ u(x, t) = \varphi(\alpha t + x) - \varphi(\alpha t - x) \quad y \quad \varphi(x) = \varphi(2l + x). \]
 Esa solución fue también demostrada por Euler en 1749. Euler difería con D’Alembert en el tipo de funciones iniciales que podían tenerse en cuenta. De hecho, estas diferencias pueden considerarse como una de las primeras
 manifestaciones escritas sobre los problemas que ha llevado consigo la definición de función, continuidad, dominio de definición, etc. La influencia de la teoría de las series trigonométricas en la clarificación de estos conceptos fue determinante.\\
-Taylor había observado ya en 1715 que las funciones $sen\left( \frac{n\pi x}{l}\right), cos\left(\frac{n\pi \alpha t}{l}\right)$ con $n$ entero son soluciones de la ecuación y se anulan en $x = 0$ y $x = l$, lo que explica que una cuerda, además de su tono fundamental, puede dar también el tono fundamental de las cuerdas de longitud $1/2$, $1/3$, $1/4$,. . . de la original. Esto llevó a Bernoulli a considerar que la cuerda podía vibrar según la expresión
+\indent Taylor había observado ya en 1715 que las funciones $sen\left( \frac{n\pi x}{l}\right), cos\left(\frac{n\pi \alpha t}{l}\right)$ con $n$ entero son soluciones de la ecuación y se anulan en $x = 0$ y $x = l$, lo que explica que una cuerda, además de su tono fundamental, puede dar también el tono fundamental de las cuerdas de longitud $1/2$, $1/3$, $1/4$,. . . de la original. Esto llevó a Bernoulli a considerar que la cuerda podía vibrar según la expresión
 \[ u(x,t) = \sum _n a_n sen\left( \frac{n\pi x}{l}\right)cos\left(\frac{n\pi \alpha t}{l}\right)(t-\beta_n)\]
 y como todas las modificaciones observadas del fenómeno se podían explicar partiendo de esta ecuación, consideró que daba la solución general.\\
 \indent El trabajo siguiente al de Bernoulli en las Memorias de la Academia de Ciencias de Berlín era de Euler, quien aseguraba frente a d´Alembert que la función $\varphi$ puede ser completamente arbitraria entre $-l$ y $l$ y señalaba que la solución de Bernoulli era general si y sólo si cualquier curva arbitraria entre $0$ y $l$ podía ser representada por una serie trigonométrica.\\
-La fórmula
+\indent La fórmula
 \[ a_n = \int_0^1 \varphi(x)sen\left(n\pi x\right)dx \]
 para calcular los coeficientes $a_n$ apareció por primera vez en un artículo escrito por Euler en 1777.
-
 \indent Lagrange, joven aún, entró en escena en 1759. Estudió las vibraciones de un hilo sin masa al que se coloca una cantidad finita de masas de igual magnitud equidistribuidas y vio cómo variaban las vibraciones al tender el
 número de masas a infinito; tras largas manipulaciones analíticas decidió que la solución de Euler era correcta.\\
-
+\indent La contribución de Fourier comenzó en 1807 con sus estudios del problema
+del flujo del calor
+\[ \frac{\partial u}{\partial t} = \frac{1}{2}\frac{\partial^2u}{\partial x^2} \]
+presentado a la Académie des Sciences en 1811 y publicado en parte como la célebre \textit{Théorie analytique de la chaleur} en 1822. Fourier hizo un intento serio por demostrar que cualquier función diferenciable puede ser expandida
+en una serie trigonométrica.
 
 
 

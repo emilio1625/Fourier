@@ -1,0 +1,10 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{3}
+\contentsline {subsection}{\numberline {1.1}Jean-Baptiste Joseph Fourier}{3}
+\contentsline {subsection}{\numberline {1.2}El rectificador de onda completa}{3}
+\contentsline {section}{\numberline {2}Objetivos}{4}
+\contentsline {section}{\numberline {3}Desarrollo}{4}
+\contentsline {section}{\numberline {4}Resultados}{5}
+\contentsline {section}{\numberline {5}Conclusiones}{5}
+\contentsline {section}{\numberline {6}Bibliografia}{5}
+\contentsline {section}{\numberline {7}Referencias}{5}

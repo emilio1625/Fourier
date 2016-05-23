@@ -92,10 +92,10 @@
   "mcode.sty" 1463973829 11369 b13826de90bf1f2d31193b94ed944a9c ""
   (generated)
   "SerieFourier.dvi"
-  "SerieFourier.toc"
-  "SerieFourier.aux"
   "SerieFourier.log"
-["pdflatex"] 1463984898 "SerieFourier.tex" "SerieFourier.pdf" "SerieFourier" 1463984898
+  "SerieFourier.aux"
+  "SerieFourier.toc"
+["pdflatex"] 1463985019 "SerieFourier.tex" "SerieFourier.pdf" "SerieFourier" 1463985019
   "/etc/texmf/web2c/texmf.cnf" 1463969256 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm" 1136768653 1384 4632f5e54900a7dadbb83f555bc61e56 ""
@@ -209,9 +209,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1463974476 127758 2c8a4499080148ca8c5956dd2e628608 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1463973382 778981 680c538ebcbf7b8e3a427bd17feeadd2 ""
-  "SerieFourier.aux" 1463984898 2233 4e4d369c86ff9c23b594e5344f9fb452 ""
-  "SerieFourier.tex" 1463984896 16164 6c9af93f7c59013d39da2f17c4082f51 ""
-  "SerieFourier.toc" 1463984898 772 5f03b496715021d11b1d5ba5eaacd3fb ""
+  "SerieFourier.aux" 1463985019 2159 8ceecb988062e9c98d6d06bb4463d4a7 ""
+  "SerieFourier.tex" 1463985019 16141 b00f30709a04061b9312e2b3b85f62db ""
+  "SerieFourier.toc" 1463985019 716 5e8e8270877375a7bdb13c760eebc1a3 ""
   "images/Circuito_Inductivo_Lineal_Onda_Completa.png" 1463983951 3670 d9ea4ed79b9ef71ad80b8ec2a93a05b1 ""
   "images/Circuito_Inductivo_Onda_Completa.png" 1463983532 10123 5696cda7a80e4f2ebb10fdedaf519735 ""
   "images/Circuito_rectificador_onda_completa.png" 1463978566 3053 f78983f5029627fb129fe04ff1943696 ""
@@ -221,6 +221,6 @@
   "mcode.sty" 1463973829 11369 b13826de90bf1f2d31193b94ed944a9c ""
   (generated)
   "SerieFourier.toc"
+  "SerieFourier.log"
   "SerieFourier.pdf"
   "SerieFourier.aux"
-  "SerieFourier.log"

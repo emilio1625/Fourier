@@ -53,18 +53,60 @@
 \newpage
 
 \section{Introducción}
+
 \subsection{Jean-Baptiste Joseph Fourier}
 \indent Jean-Baptiste Joseph Fourier (21 March 1768 – 16 May 1830) fue un físico y matemático francés, entre sus aportaciones a la ciencia están la series de Fourier para representar cualquier función periódica mediante una serie de senos y cosenos, y ampliamente usada para resolver problemas sobre vibraciones y la transferencia de calor; la transformada de Fourier y la ley de Fourier.\\
 \indent En diciembre de 1807, Joseph Fourier presentó ante la Academia de Ciencias de París su \textit{Théorie de la propagation de la chaleur dans le solides}, en ella proponía una ecuación diferencial para describir la difusión del calor en un cuerpo sólido y propuso una solución mediante la representación de una función como series de senos y cosenos.\\
 \indent Este trabajo fue ampliamente criticado en su momento, especialmente por Biot, Poisson, Laplace y Lagrange, quién se oponía a la idea de que una función cualquiera pudiese ser representada mediante una serie trigonométrica.\\
 \indent Fourier veía a las matemáticas como una herramienta para explicar el mundo, y con su análisis pretendía únicamente plantear un fenómeno físico y explicar su solución, y no llegar a un rigor matemático en su desarrollo.
+
 \subsection{El rectificador de onda completa}
 \indent Tanto la generación como la transmisión y conversión de energía eléctrica se realizan de una manera más simple y eficiente en corriente alterna. Asimismo, debido a la resistencia de los conductores que forman una línea de transmisión, es conveniente que la corriente sea lo menor posible, lo cual requiere aumentar la tensión. Los transformadores de corriente alterna permiten llevar a cabo esta conversión con alto rendimiento.\\
 \indent Sin embargo, la gran mayoría de los aparatos eléctricos y electrónicos precisan de un flujo de tensión continua, este flujo es suministrado por un sistema llamado fuente de alimentación. El componente más importante de una fuente de alimentación es el rectificador de onda, cuya función es convertir la corriente alterna en una corriente unidireccional, que idealmente, no variará con el tiempo.\\
-\indent Existen dos tipos principales de rectificadores, el rectificador de media onda y el de onda completa.\\
-\indent El circuito rectificador de media onda tiene como ventaja su sencillez, pero no permite utilizar toda la energía disponible, ya que los
+\indent Existen dos tipos principales de rectificadores, el rectificador de media onda y el de onda completa. El circuito rectificador de media onda tiene como ventaja su sencillez, pero no permite utilizar toda la energía disponible, ya que los
 semiciclos negativos son desaprovechados. Este inconveniente se resuelven con los rectificadores de onda completa.\\
 \indent Como se ha señalado anteriormente, los rectificadores ideales producen formas de onda unidireccionales pero de ninguna manera constantes, como sería deseable para su uso como fuente de alimentación. Dado que el problema es equivalente al de eliminar las componentes frecuenciales diferentes de la continua, la solución consiste en utilizar un filtro pasabajos cuya frecuencia de corte esté suficientemente por debajo de la
 frecuencia de la onda rectificada, dicho filtro puede implementarse mediante capacitores o inductores, aquí analizaremos el segundo caso.
+
+\section{Objetivos}
+\begin{enumerate}
+    \item Mostrar una aplicación de la serie trigonométrica de Fourier, relacionada con las carreras de la DIE.
+    \item Dar una ligera introducción a la respuesta de sistemas en frecuencia.
+    \item Comprender el funcionamiento de un rectificador de onda.
+    \item Analizar el comportamiento de un circuito RL aplicado a un rectificador de corriente.
+    \item Calcular los coeficientes de la serie de Fourier de una señal eléctrica.
+    \item Aplicar los conocimientos adquiridos en clase sobre la serie de Fourier para señales periódicas pares e impares.
+    \item Obtener la serie de Fourier de una señal rectificada.
+    \item Interpretar el significado de la serie y los coeficientes de la serie de Fourier.
+    \item Valorar la contribución de Fourier al análisis de fenómenos fisicos.    
+\end{enumerate}
+
+\section{Desarrollo}
+
+La idea básica de las series de Fourier es que toda función periódica de período $T$ puede ser expresada como una suma trigonométrica de senos y cosenos del mismo período $T$.\\
+\indent A mediados del siglo XVIII, es decir, unos cincuenta años antes de los trabajos de Fourier, ya se había planteado el problema de la representación de una función por medio de una serie trigonométrica.\\
+\indent En 1747 mientras estudiaba el movimiento en las cuerdas de violín d´Alembert muestra que la solución general de la ecuación de ondas
+\[ \frac{\partial ^2u}{\partial t^2}-\alpha\frac{\partial^2t}{\partial x^2} = 0 \]
+se escribe de la forma
+\[ u(x,t) = \varphi(x + \alpha t) + \psi(x - \alpha t)  \]
+A continuación impone la condición de que los extremos de la cuerda en $x = 0$ y $x = l$ estén fijos y deduce que
+\[ u(x, t) = \varphi(\alpha t + x) - \varphi(\alpha t - x) \quad y \quad \varphi(x) = \varphi(2l + x). \]
+Esa solución fue también demostrada por Euler en 1749. Euler difería con D’Alembert en el tipo de funciones iniciales que podían tenerse en cuenta. De hecho, estas diferencias pueden considerarse como una de las primeras
+manifestaciones escritas sobre los problemas que ha llevado consigo la definición de función, continuidad, dominio de definición, etc. La influencia de la teoría de las series trigonométricas en la clarificación de estos conceptos fue determinante.\\
+Taylor había observado ya en 1715 que las funciones $sen\left( \frac{n\pi x}{l}\right), cos\left(\frac{n\pi \alpha t}{l}\right)$ con $n$ entero son soluciones de la ecuación y se anulan en $x = 0$ y $x = l$, lo que explica que una cuerda, además de su tono fundamental, puede dar también el tono fundamental de las cuerdas de longitud $1/2$, $1/3$, $1/4$,. . . de la original. Esto llevó a Bernoulli a considerar que la cuerda podía vibrar según la expresión
+\[ u(x,t) = \sum _n a_n sen\left( \frac{n\pi x}{l}\right)cos\left(\frac{n\pi \alpha t}{l}\right)(t-\beta_n)\]
+y como todas las modificaciones observadas del fenómeno se podían explicar partiendo de esta ecuación, consideró que daba la solución general.\\
+\indent El trabajo siguiente al de Bernoulli en las Memorias de la Academia de Ciencias de Berlín era de Euler, quien aseguraba frente a d´Alembert que la función $\varphi$ puede ser completamente arbitraria entre $-l$ y $l$ y señalaba que la solución de Bernoulli era general si y sólo si cualquier curva arbitraria entre $0$ y $l$ podía ser representada por una serie trigonométrica.\\
+La fórmula
+\[ a_n = \int_0^1 \varphi(x)sen\left(n\pi x\right)dx \]
+para calcular los coeficientes $a_n$ apareció por primera vez en un artículo escrito por Euler en 1777.
+
+\indent Lagrange, joven aún, entró en escena en 1759. Estudió las vibraciones de un hilo sin masa al que se coloca una cantidad finita de masas de igual magnitud equidistribuidas y vio cómo variaban las vibraciones al tender el
+número de masas a infinito; tras largas manipulaciones analíticas decidió que la solución de Euler era correcta.\\
+
+
+
+
+
 
 \end{document}
